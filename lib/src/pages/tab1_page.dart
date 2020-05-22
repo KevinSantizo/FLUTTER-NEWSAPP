@@ -16,7 +16,6 @@ class _TabOnePageState extends State<TabOnePage> with AutomaticKeepAliveClientMi
   Widget build(BuildContext context) {
 
     final headlines = Provider.of<NewsService>(context).headlines;
-    // newService.getDocHeadlines();
     
     return Scaffold(
       body: (headlines.length ==0)
@@ -27,6 +26,5 @@ class _TabOnePageState extends State<TabOnePage> with AutomaticKeepAliveClientMi
   }
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

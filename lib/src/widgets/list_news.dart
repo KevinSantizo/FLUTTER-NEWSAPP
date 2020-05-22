@@ -56,6 +56,7 @@ class _TargetButtons extends StatelessWidget {
             ),
             child: Icon(Icons.star_border),
           ),
+          VerticalDivider(),
           RawMaterialButton(
             onPressed: (){},
             fillColor: Colors.blue,
@@ -140,7 +141,7 @@ class _TargetTopBar extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 10.0),
       child: Row(
         children: <Widget>[
-          Text('${index + 1 }', style: TextStyle(color: myTheme.accentColor),),
+          Text('${index + 1 } ', style: TextStyle(color: myTheme.accentColor),),
           Text('${neww.source.name}')
         ],
       ),
